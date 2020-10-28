@@ -627,7 +627,7 @@ public class MasterControls : MonoBehaviour {
 
 
 
-	private Color reticlecolor1;
+	private Color reticleColor1;
 	private Color reticlecolor2;
 	public CanvasGroup reticlegroup;
 	private bool headtouchtrigger;
@@ -947,9 +947,9 @@ public class MasterControls : MonoBehaviour {
 		bossrotation = GameObject.Find ("Boss_rotation4").transform.rotation;
 		spotlight.transform.parent = GameObject.Find ("FPSController (head)").transform;
 
-		reticlecolor1 = new Color (1, 1, 1, .5f);
+		reticleColor1 = new Color (1, 1, 1, .5f);
 		reticlecolor2 = new Color (0, 0, 0, .5f);
-		reticle.color = reticlecolor1;
+		reticle.color = reticleColor1;
 
 		InvokeRepeating ("BlackWhite", 0, .5f);
 		cielingoffposition = new Vector3 (.7f, 40, -.4f);
@@ -2848,7 +2848,7 @@ public class MasterControls : MonoBehaviour {
 					//CancelInvoke ("BlackWhite");
 				if (levelcounter != 8) {
 					
-						reticle.color = reticlecolor1;
+						reticle.color = reticleColor1;
 						reticlegroup.alpha = .8f;
 
 			
@@ -8398,10 +8398,10 @@ void Movingwalls()
 void BlackWhite()
 {return;
 
-		if (reticle.color == reticlecolor1)
+		if (reticle.color == reticleColor1)
 			reticle.color = reticlecolor2;
 		else
-			reticle.color = reticlecolor1;
+			reticle.color = reticleColor1;
 		reticlegroup.alpha = .8f;
 }
 
