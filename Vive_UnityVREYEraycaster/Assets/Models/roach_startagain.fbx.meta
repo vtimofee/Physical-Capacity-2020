@@ -1,0 +1,460 @@
+fileFormatVersion: 2
+guid: 1b8d8819fdfdd08408660b9f67035262
+timeCreated: 1484059986
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: 22roachbones
+    100002: ant_l
+    100004: ant_r
+    100006: b1_l
+    100008: b1_r
+    100010: b2_l
+    100012: b2_r
+    100014: b3_l
+    100016: b3_r
+    100018: blend_root
+    100020: CINEMA_4D_Editor
+    100022: f1_l
+    100024: f1_r
+    100026: f2_l
+    100028: f2_r
+    100030: f3_l
+    100032: f3_r
+    100034: head
+    100036: m1_l
+    100038: m1_r
+    100040: m2_l
+    100042: m2_r
+    100044: m3_l
+    100046: m3_r
+    100048: //RootNode
+    100050: roachmesh
+    100052: root
+    400000: 22roachbones
+    400002: ant_l
+    400004: ant_r
+    400006: b1_l
+    400008: b1_r
+    400010: b2_l
+    400012: b2_r
+    400014: b3_l
+    400016: b3_r
+    400018: blend_root
+    400020: CINEMA_4D_Editor
+    400022: f1_l
+    400024: f1_r
+    400026: f2_l
+    400028: f2_r
+    400030: f3_l
+    400032: f3_r
+    400034: head
+    400036: m1_l
+    400038: m1_r
+    400040: m2_l
+    400042: m2_r
+    400044: m3_l
+    400046: m3_r
+    400048: //RootNode
+    400050: roachmesh
+    400052: root
+    4300000: roachmesh
+    7400000: Pause
+    7400002: Walk
+    7400004: Boss
+    7400006: Dead
+    9500000: //RootNode
+    13700000: roachmesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Pause
+      takeName: C4D Animation Take
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: blend_root
+        weight: 1
+      - path: blend_root/22roachbones
+        weight: 1
+      - path: blend_root/22roachbones/roachmesh
+        weight: 1
+      - path: blend_root/22roachbones/root
+        weight: 1
+      - path: blend_root/22roachbones/root/b1_l
+        weight: 1
+      - path: blend_root/22roachbones/root/b1_l/b2_l
+        weight: 1
+      - path: blend_root/22roachbones/root/b1_l/b2_l/b3_l
+        weight: 1
+      - path: blend_root/22roachbones/root/b1_r
+        weight: 1
+      - path: blend_root/22roachbones/root/b1_r/b2_r
+        weight: 1
+      - path: blend_root/22roachbones/root/b1_r/b2_r/b3_r
+        weight: 1
+      - path: blend_root/22roachbones/root/f1_l
+        weight: 1
+      - path: blend_root/22roachbones/root/f1_l/f2_l
+        weight: 1
+      - path: blend_root/22roachbones/root/f1_l/f2_l/f3_l
+        weight: 1
+      - path: blend_root/22roachbones/root/f1_r
+        weight: 1
+      - path: blend_root/22roachbones/root/f1_r/f2_r
+        weight: 1
+      - path: blend_root/22roachbones/root/f1_r/f2_r/f3_r
+        weight: 1
+      - path: blend_root/22roachbones/root/head
+        weight: 1
+      - path: blend_root/22roachbones/root/head/ant_l
+        weight: 1
+      - path: blend_root/22roachbones/root/head/ant_r
+        weight: 1
+      - path: blend_root/22roachbones/root/m1_l
+        weight: 1
+      - path: blend_root/22roachbones/root/m1_l/m2_l
+        weight: 1
+      - path: blend_root/22roachbones/root/m1_l/m2_l/m3_l
+        weight: 1
+      - path: blend_root/22roachbones/root/m1_r
+        weight: 1
+      - path: blend_root/22roachbones/root/m1_r/m2_r
+        weight: 1
+      - path: blend_root/22roachbones/root/m1_r/m2_r/m3_r
+        weight: 1
+      - path: CINEMA_4D_Editor
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Walk
+      takeName: C4D Animation Take
+      firstFrame: 40
+      lastFrame: 98
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: blend_root
+        weight: 1
+      - path: blend_root/22roachbones
+        weight: 1
+      - path: blend_root/22roachbones/roachmesh
+        weight: 1
+      - path: blend_root/22roachbones/root
+        weight: 1
+      - path: blend_root/22roachbones/root/b1_l
+        weight: 1
+      - path: blend_root/22roachbones/root/b1_l/b2_l
+        weight: 1
+      - path: blend_root/22roachbones/root/b1_l/b2_l/b3_l
+        weight: 1
+      - path: blend_root/22roachbones/root/b1_r
+        weight: 1
+      - path: blend_root/22roachbones/root/b1_r/b2_r
+        weight: 1
+      - path: blend_root/22roachbones/root/b1_r/b2_r/b3_r
+        weight: 1
+      - path: blend_root/22roachbones/root/f1_l
+        weight: 1
+      - path: blend_root/22roachbones/root/f1_l/f2_l
+        weight: 1
+      - path: blend_root/22roachbones/root/f1_l/f2_l/f3_l
+        weight: 1
+      - path: blend_root/22roachbones/root/f1_r
+        weight: 1
+      - path: blend_root/22roachbones/root/f1_r/f2_r
+        weight: 1
+      - path: blend_root/22roachbones/root/f1_r/f2_r/f3_r
+        weight: 1
+      - path: blend_root/22roachbones/root/head
+        weight: 1
+      - path: blend_root/22roachbones/root/head/ant_l
+        weight: 1
+      - path: blend_root/22roachbones/root/head/ant_r
+        weight: 1
+      - path: blend_root/22roachbones/root/m1_l
+        weight: 1
+      - path: blend_root/22roachbones/root/m1_l/m2_l
+        weight: 1
+      - path: blend_root/22roachbones/root/m1_l/m2_l/m3_l
+        weight: 1
+      - path: blend_root/22roachbones/root/m1_r
+        weight: 1
+      - path: blend_root/22roachbones/root/m1_r/m2_r
+        weight: 1
+      - path: blend_root/22roachbones/root/m1_r/m2_r/m3_r
+        weight: 1
+      - path: CINEMA_4D_Editor
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Boss
+      takeName: C4D Animation Take
+      firstFrame: 62
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: blend_root
+        weight: 1
+      - path: blend_root/22roachbones
+        weight: 1
+      - path: blend_root/22roachbones/roachmesh
+        weight: 1
+      - path: blend_root/22roachbones/root
+        weight: 1
+      - path: blend_root/22roachbones/root/b1_l
+        weight: 1
+      - path: blend_root/22roachbones/root/b1_l/b2_l
+        weight: 1
+      - path: blend_root/22roachbones/root/b1_l/b2_l/b3_l
+        weight: 1
+      - path: blend_root/22roachbones/root/b1_r
+        weight: 1
+      - path: blend_root/22roachbones/root/b1_r/b2_r
+        weight: 1
+      - path: blend_root/22roachbones/root/b1_r/b2_r/b3_r
+        weight: 1
+      - path: blend_root/22roachbones/root/f1_l
+        weight: 1
+      - path: blend_root/22roachbones/root/f1_l/f2_l
+        weight: 1
+      - path: blend_root/22roachbones/root/f1_l/f2_l/f3_l
+        weight: 1
+      - path: blend_root/22roachbones/root/f1_r
+        weight: 1
+      - path: blend_root/22roachbones/root/f1_r/f2_r
+        weight: 1
+      - path: blend_root/22roachbones/root/f1_r/f2_r/f3_r
+        weight: 1
+      - path: blend_root/22roachbones/root/head
+        weight: 1
+      - path: blend_root/22roachbones/root/head/ant_l
+        weight: 1
+      - path: blend_root/22roachbones/root/head/ant_r
+        weight: 1
+      - path: blend_root/22roachbones/root/m1_l
+        weight: 1
+      - path: blend_root/22roachbones/root/m1_l/m2_l
+        weight: 1
+      - path: blend_root/22roachbones/root/m1_l/m2_l/m3_l
+        weight: 1
+      - path: blend_root/22roachbones/root/m1_r
+        weight: 1
+      - path: blend_root/22roachbones/root/m1_r/m2_r
+        weight: 1
+      - path: blend_root/22roachbones/root/m1_r/m2_r/m3_r
+        weight: 1
+      - path: CINEMA_4D_Editor
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Dead
+      takeName: C4D Animation Take
+      firstFrame: 97
+      lastFrame: 97
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: blend_root
+        weight: 1
+      - path: blend_root/22roachbones
+        weight: 1
+      - path: blend_root/22roachbones/roachmesh
+        weight: 1
+      - path: blend_root/22roachbones/root
+        weight: 1
+      - path: blend_root/22roachbones/root/b1_l
+        weight: 1
+      - path: blend_root/22roachbones/root/b1_l/b2_l
+        weight: 1
+      - path: blend_root/22roachbones/root/b1_l/b2_l/b3_l
+        weight: 1
+      - path: blend_root/22roachbones/root/b1_r
+        weight: 1
+      - path: blend_root/22roachbones/root/b1_r/b2_r
+        weight: 1
+      - path: blend_root/22roachbones/root/b1_r/b2_r/b3_r
+        weight: 1
+      - path: blend_root/22roachbones/root/f1_l
+        weight: 1
+      - path: blend_root/22roachbones/root/f1_l/f2_l
+        weight: 1
+      - path: blend_root/22roachbones/root/f1_l/f2_l/f3_l
+        weight: 1
+      - path: blend_root/22roachbones/root/f1_r
+        weight: 1
+      - path: blend_root/22roachbones/root/f1_r/f2_r
+        weight: 1
+      - path: blend_root/22roachbones/root/f1_r/f2_r/f3_r
+        weight: 1
+      - path: blend_root/22roachbones/root/head
+        weight: 1
+      - path: blend_root/22roachbones/root/head/ant_l
+        weight: 1
+      - path: blend_root/22roachbones/root/head/ant_r
+        weight: 1
+      - path: blend_root/22roachbones/root/m1_l
+        weight: 1
+      - path: blend_root/22roachbones/root/m1_l/m2_l
+        weight: 1
+      - path: blend_root/22roachbones/root/m1_l/m2_l/m3_l
+        weight: 1
+      - path: blend_root/22roachbones/root/m1_r
+        weight: 1
+      - path: blend_root/22roachbones/root/m1_r/m2_r
+        weight: 1
+      - path: blend_root/22roachbones/root/m1_r/m2_r/m3_r
+        weight: 1
+      - path: CINEMA_4D_Editor
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

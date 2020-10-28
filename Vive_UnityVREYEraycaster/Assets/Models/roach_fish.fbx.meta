@@ -1,0 +1,125 @@
+fileFormatVersion: 2
+guid: f06e237ba1f1e354193c5a921f1a961d
+timeCreated: 1486208091
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: 22roachbones
+    100002: BackBone_Auto_null
+    100004: blend_root
+    100006: Character
+    100008: CINEMA_4D_Editor
+    100010: Fish_rig
+    100012: IK_Back_Bone_01_jnt
+    100014: IK_Back_Bone_02_jnt
+    100016: IK_Back_Bone_03_jnt
+    100018: IK_Back_Bone_04_jnt
+    100020: IK_Back_Bone_05_jnt
+    100022: IK_Back_Bone_06_jnt
+    100024: IK_Back_Bone_07_jnt
+    100026: IK_Back_Bone_08_jnt
+    100028: IK_Back_Bone_09_jnt
+    100030: IK_Head_01_jnt
+    100032: IK_Head_02_jnt
+    100034: IK_Head_Auto_null
+    100036: IK_Spine_null
+    100038: Main_con_
+    100040: Master_con_
+    100042: Null
+    100044: //RootNode
+    100046: roachmesh
+    100048: Spine_Group_null
+    400000: 22roachbones
+    400002: BackBone_Auto_null
+    400004: blend_root
+    400006: Character
+    400008: CINEMA_4D_Editor
+    400010: Fish_rig
+    400012: IK_Back_Bone_01_jnt
+    400014: IK_Back_Bone_02_jnt
+    400016: IK_Back_Bone_03_jnt
+    400018: IK_Back_Bone_04_jnt
+    400020: IK_Back_Bone_05_jnt
+    400022: IK_Back_Bone_06_jnt
+    400024: IK_Back_Bone_07_jnt
+    400026: IK_Back_Bone_08_jnt
+    400028: IK_Back_Bone_09_jnt
+    400030: IK_Head_01_jnt
+    400032: IK_Head_02_jnt
+    400034: IK_Head_Auto_null
+    400036: IK_Spine_null
+    400038: Main_con_
+    400040: Master_con_
+    400042: Null
+    400044: //RootNode
+    400046: roachmesh
+    400048: Spine_Group_null
+    4300000: roachmesh
+    7400000: C4D Animation Take
+    9500000: //RootNode
+    13700000: roachmesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
