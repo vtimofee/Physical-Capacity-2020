@@ -6,17 +6,15 @@ using UnityEngine.UI;
 
 
 public class MasterControls : MonoBehaviour {
-	private Vector3 outlineonposition;
+
+	private Vector3 outlineOnPosition;
 	private Vector3 outlineoffposition;
 	private Vector3 outlineoff2position;
-
-	// Use this for initialization
 	private bool holdoff;
 	public CameraPosition cameraposition;
 	public bool gamestart;
 	public Material cockroachskybox;
 	public Material cockroachskybox2;
-
 	private float exposure = .62f;
 	public GameObject fourwalls;
 	private Vector3 fourwallsstartposition;
@@ -29,7 +27,6 @@ public class MasterControls : MonoBehaviour {
 	public GameObject sphere3;
 	public bool onstartcube;
 	private Vector3 startcubestartposition;
-
 	private float spherey;
 	private float sphereytarget;
 	private Vector3 sphereposition;
@@ -38,13 +35,10 @@ public class MasterControls : MonoBehaviour {
 	public CanvasGroup arrows;
 	private float arrowtransparencytarget=0;
 	private float arrowtransparency;
-
-
 	private Vector3 level2wall1targetposition;
 	private Vector3 level2wall2targetposition;
 	private Vector3 level2wall1startposition;
 	private Vector3 level2wall2startposition;
-
 	private Vector3 level3wall3startposition;
 	private Vector3 level3wall4startposition;
 	private Vector3 level3wall3targetposition;
@@ -54,7 +48,6 @@ public class MasterControls : MonoBehaviour {
 	private Vector3 level4wall5startposition;
 	private Vector3 level4wall6startposition;
 	private Vector3 level4wall7targetposition;
-
 	private Vector3 wall7startposition;
 	private Vector3 wall7targetposition;
 	private Vector3 wall8startposition;
@@ -63,15 +56,8 @@ public class MasterControls : MonoBehaviour {
 	private Vector3 wall9targetposition;
 	private Vector3 wall10startposition;
 	private Vector3 wall10targetposition;
-
-
-
-
 	private Vector3 storageposition;
-
-
 	public Camera ccamera;
-
 	public Material roachnumber;
 	public Texture2D roachnumber0;
 	public Texture2D roachnumber1;
@@ -84,45 +70,31 @@ public class MasterControls : MonoBehaviour {
 	public Texture2D roachnumber8;
 	public Texture2D roachnumber9;
 	public Material levelnumber;
-
-
 	public  int roachcounter;
 	public int levelcounter;
-
 	public Transform walltest1;
 	private float distancebetween;
 	public Vector3 headrotation;
-
 	public bool on;
-	//public Camera ccamera;
 	public Image reticle;
 	public Sprite reticleon;
 	public Sprite reticleoff;
 	public Sprite reticleblank;
-
 	public string currentroach;
 	public Image snakesprite1;
 	public Image snakesprite2;
 	private Color colorstorage1;
 	private Color colorstorage2;
-
-
 	private float colornumber = 10f;
 	private float colornumber2=10f;
-
 	private bool setupover;
-
 	public Text levelcountertext;
 	public Text levelcountertext2;
 	public Text levelcountertext3;
 	public Text levelcountertext4;
 	public Text levelcountertext5;
-
-
 	public Text roachcountertext;
-
 	private int currentroachint;
-
 	private bool levelchange1to2;
 	private bool levelchange2to3;
 	private bool levelchange3to4;
@@ -130,13 +102,8 @@ public class MasterControls : MonoBehaviour {
 	private bool levelchange5to6;
 	private bool levelchange6to7;
 	private bool levelchange7to8;
-
-
-
 	private bool levelswitchinprogress;
-
 	private bool readylevel1;
-
 	public Material blue;
 	public Material red;
 	public Material green;
@@ -147,7 +114,6 @@ public class MasterControls : MonoBehaviour {
 	public Material orange;
 	public Material magenta;
 	public Material white;
-
 	public GameObject P1;
 	public GameObject P2;
 	public GameObject P3;
@@ -157,13 +123,8 @@ public class MasterControls : MonoBehaviour {
 	public GameObject P7;
 	public GameObject P8;
 	public GameObject P0;
-
-
-
 	private Color ccolor;
-
 	private float patterntimer=3f;
-
 	private bool pattern1on;
 	private bool pattern2on;
 	private bool pattern3on;
@@ -172,24 +133,18 @@ public class MasterControls : MonoBehaviour {
 	private bool pattern6on;
 	private bool pattern7on;
 	private bool pattern8on;
-
-
-
 	private bool pattern2_00on;
-
 	private bool pattern2_0on;
 	private bool pattern2_1on;
 	private bool pattern2_2on;
 	private bool pattern2_3on;
 	private bool pattern3_00on;
-
 	private bool pattern3_0on;
 	private bool pattern3_1on;
 	private bool pattern3_2on;
 	private bool pattern3_3on;
 	private bool pattern3_4on;
 	private bool pattern4_0on;
-
 	private bool pattern4_1on;
 	private bool pattern4_2on;
 	private bool pattern4_3on;
@@ -208,7 +163,6 @@ public class MasterControls : MonoBehaviour {
 	private bool pattern6_4on;
 	private bool pattern6_5on;
 	private bool pattern6_6on;
-
 	private bool pattern7_0on;
 	private bool pattern7_1on;
 	private bool pattern7_2on;
@@ -217,22 +171,15 @@ public class MasterControls : MonoBehaviour {
 	private bool pattern7_5on;
 	private bool pattern7_6on;
 	private bool pattern7_7on;
-
-
 	private bool pattern8_0on;
 	private bool pattern8_1on;
 	private bool pattern8_2on;
 	private bool pattern8_3on;
 	private bool pattern8_4on;
 	private bool pattern8_5on;
-
 	private int materialcounter;
-
-
 	private bool patternreticle;
-
 	private bool pattern2done;
-
 	private bool pattern2turningoff;
 	private bool pattern3turningoff;
 	private bool pattern4turningoff;
@@ -240,21 +187,13 @@ public class MasterControls : MonoBehaviour {
 	private bool pattern6turningoff;
 	private bool pattern7turningoff;
 	private bool pattern8turningoff;
-
-
 	private bool patterntrigger;
 	private bool pattern2oninprogress;
 	private bool pattern3oninprogress;
-
-
 	private Vector3 p1offposition;
 	private Vector3 p1onposition;
-
-
 	private Vector3 p0offposition;
 	private Vector3 p0onposition;
-
-
 	private Vector3 p2offposition;
 	private Vector3 p2onposition;
 	private Vector3 p3offposition;
@@ -267,7 +206,6 @@ public class MasterControls : MonoBehaviour {
 	private Vector3 p6onposition;
 	private Vector3 p7offposition;
 	private Vector3 p7onposition;
-
 	private float alphafull;
 	private float alphazero;
 	private float currentalpha0 = 1;
@@ -284,16 +222,10 @@ public class MasterControls : MonoBehaviour {
 	private float currentalpha11;
 	private float currentalpha12;
 	private float currentalpha13=1f;
-
-
 	private bool end;
-
-
-
 	private int score;
 	public Text clock;
 	private string clockstring;
-
 	private float patterntimerthreshold;
 	private float patterntimerthreshold_2=4;
 	private float patterntimerthreshold_3=5; 
@@ -302,32 +234,19 @@ public class MasterControls : MonoBehaviour {
 	private float patterntimerthreshold_6=7;
 	private float patterntimerthreshold_7=8;
 	private float patterntimerthreshold_8=5;
-
-
-
-
-
 	public bool start0;
-
 	private Vector3 sphereposition1;
 	private Vector3 sphereposition2;
 	private Vector3 sphereposition3;
-
 	public bool pattern;
 	public CockroachParent cockroachparent;
-
-
-
 	private float alpha_s1;
 	private float alpha_s2;
 	private float alpha_s3;
 	private float alpha_s4;
-
 	private bool on_trigger;
 	private bool off_trigger;
-
 	private bool reset_0;
-
 	private bool reset_1;
 	private bool reset_2;
 	private bool reset_3;
@@ -335,29 +254,17 @@ public class MasterControls : MonoBehaviour {
 	private bool reset_5;
 	private bool reset_6;
 	private bool reset_7;
-
 	private bool forcedprogress;
-
-
 	private int patterndeaths;
-
 	private float alphacut = .5f;
-	//private float alphacut = 1f;
-
 	private float alphacut0 = .3f;
-	//private float alphacutfinal = .03f;
 	private float alphacutfinal = .05f;
-
-
-
 	public Material floormaterial;
 	private float scalex;
 	private float scaley;
-
 	public Material wallmaterial;
 	private float wallscalex;
 	private float wallscaley;
-
 	public Transform st_target;
 	private float st_speed=70;
 	private float st_rotationspeed=1f;
@@ -365,28 +272,18 @@ public class MasterControls : MonoBehaviour {
 	private float st_range2 = 10;
 	public Transform st_transform;
 	private float st_stop=.1f;
-
 	public Transform spheretargetlook;
-
-
-	//public Transform roachprefab;
-
 	private float distanceWanted = 2f;
 	private Vector3 diff;
-
 	private float distanceWanted2 = .2f;
 	private Vector3 diff2;
-
 	private float distanceWanted3 = .4f;
 	private Vector3 diff3;
-
 	private Color coloryellow;
 	private Color colorred;
 	private Color colorblue;
 	private Color colorgreen;
-
 	private float fadered;
-
 	public AudioClip sound1;
 	public AudioClip sound2;
 	public AudioClip sound3;
@@ -394,13 +291,10 @@ public class MasterControls : MonoBehaviour {
 	public AudioClip sound5;
 	public AudioClip sound6;
 	public AudioClip sound7;
-
 	public AudioSource dotsound;
-
 	public AudioSource soundtogether;
 	public AudioClip soundall;
 	private bool alltogether;
-
 	private Color currentcolor;
 	private Color tempcolor1;
 	private Color tempcolor2;
@@ -408,26 +302,17 @@ public class MasterControls : MonoBehaviour {
 	private Color tempcolor4;
 	private Color tempcolor5;
 	private Color tempcolor6;
-
-
-
 	private bool gazeontrigger;
 	private bool gazeofftrigger;
 	private bool gazeonreset;
 	private bool gazeoffreset;
-
 	private float spotlight_targetintensity1 = 2.81f;
-
 	private float tempvolume1;
 	private float tempvolume2;
 	private float tempvolume3;
 	private float tempvolume4;
 	private float tempvolume5;
 	private float tempvolume6;
-
-
-
-
 	public GameObject cieling;
 	private Vector3 cielingposition1;
 	private Vector3 cielingposition2;
@@ -437,52 +322,34 @@ public class MasterControls : MonoBehaviour {
 	private Vector3 cielingposition6;
 	private Vector3 cielingposition7;
 	private Vector3 cielingposition8;
-
-
-
-
-
-
 	private bool fullcolordelay;
 	private bool fullcolorfade;
-
 	private bool cracking;
 	private float crackingthresholdsmall=2;
 	private float crackingthresholdmedium=2;
 	private int crackingdirection=0;
-
 	private Color Colorbrown;
-
 	public GameObject floor;
 	public GameObject floor2;
-
 	private Vector3 flooronposition;
 	private Vector3 flooroffposition;
-
 	private Vector3 floor2onposition;
 	private Vector3 floor2offposition;
-
 	private Vector3 floordownposition;
 	private Vector3 tempposition1;
 	public GameObject redsphere;
-
 	public GameObject FPSLine;
 	public GameObject Roach1Line;
-
 	public Text fpspointcountertext;
 	private int fpspointcounter;
 	public Text roach1pointcountertext;
 	private int roach1pointcounter;
-
 	public GameObject level1;
 	public GameObject level2;
 	public GameObject level3;
 	public GameObject level4_borders;
 	public GameObject level4_floor;
 	public GameObject level8;
-
-
-
 	private Vector3 level1startposition;
 	private Vector3 level1offposition;
 	private Vector3 level1targetposition;
@@ -501,30 +368,19 @@ public class MasterControls : MonoBehaviour {
 	public Vector3 level7offposition;
 	public Vector3 level7startposition;
 	public Vector3 level7targetposition;
-
 	private Vector3 level6_flooroffposition;
 	private Vector3 level7_flooroffposition;
 	private Vector3 level7_floortargetposition;
 	private Vector3 level7_bordersoffposition;
 	private Vector3 level7_borderstargetposition;
-
 	private Vector3 level6_floortargetposition;
 	private Vector3 level6_borderstargetposition;
-	//private Vector3 level7_borderstargetposition;
-
-
-
-
-
-
-
 	public ParticleSystem expl1;
 	public ParticleSystem expl2;
 	public ParticleSystem expl3;
 	public ParticleSystem expl4;
 	public ParticleSystem expl5;
 	public ParticleSystem expl6;
-
 	public ParticleSystem levelxpl1;
 	public GameObject levelxpl1_light;
 	public ParticleSystem levelxpl2;
@@ -537,42 +393,27 @@ public class MasterControls : MonoBehaviour {
 	public GameObject levelxpl5_light;
 	public ParticleSystem levelxpl6;
 	public GameObject levelxpl6_light;
-
 	public ParticleSystem level7_xpl2;
 	public GameObject level7_xpl2_light;
 	public AudioSource level7_xpl2_sound1;
-
 	public ParticleSystem level7_xpl1;
 	public GameObject level7_xpl1_light;
 	public AudioSource level7_xpl1_sound1;
-
-
-
-
 	public int levelxplcounter;
 	private bool levelxplshake;
-
-
-
 	public AudioSource explsound;
-
 	public AudioSource expl1sound;
 	public AudioSource expl2sound;
 	public AudioSource expl3sound;
 	public AudioSource expl4sound;
 	public AudioSource expl5sound;
 	public AudioSource expl6sound;
-
 	public AudioSource levelxpl_sound1;
 	public AudioSource levelxpl_sound2;
 	public AudioSource levelxpl_sound3;
 	public AudioSource levelxpl_sound4;
 	public AudioSource levelxpl_sound5;
 	public AudioSource levelxpl_sound6;
-
-
-
-
 	public bool roachexplode;
 	public GameObject grid;
 	private Vector3 gridonposition;
@@ -587,46 +428,33 @@ public class MasterControls : MonoBehaviour {
 	private bool abovegrid;
 	private bool fromabovetobelowgrid;
 	public CanvasGroup scorecanvas;
-
 	private float leveltimer=10;
 	public float roachdrop;
 	public AudioSource wallsound;
 	public bool roachplant;
-
 	private int level4direction;
 	private Vector3 tempposition4;
 	public GameObject wall1;
-
 	public AudioSource roomsound;
-
 	private bool dddebug=false;
-
-
 	public Camera hudcamera;
 	public AudioSource noisesound;
 	private Vector3 currentcielingposition;
 	private float currentcielingthreshold;
-
 	public GameObject level5_floor;
 	public GameObject level5_borders;
 	public GameObject level6_floor;
 	public GameObject level6_borders;
 	public GameObject level7_floor;
 	public GameObject level7_borders;
-
 	private float spotlightrange1=1.7f;
 	private float spotlightrange2=1.4f;
 	private float spotlightrange3=1.2f;
-
 	private float spotlightrange4=1.2f;
 	private float spotlightrange5=1f;
 	private float spotlightrange6=0f;
 	private float spotlightrange7=1f;
-	//private float spotlightrange8=.4f;
 	private float spotlightrange8=.5f;
-
-
-
 	private Color reticleColor1;
 	private Color reticlecolor2;
 	public CanvasGroup reticlegroup;
@@ -635,23 +463,17 @@ public class MasterControls : MonoBehaviour {
 	private float levelxplthreshold=1;
 	private float levelxpl_shakex=.07f;
 	private float levelxpl_shakey=.07f;
-
 	private int currentp;
-
-
 	private Vector3 level7_xplposition1= new Vector3(.49f,-.005f,-1.552f);
 	private Vector3 level7_xplposition2= new Vector3(.198f,-.005f,.53f);
 	private Vector3 level7_xplposition3= new Vector3(1.802f,-.005f,-.477f);
 	private Vector3 playerpos;
 	private int quadrant;
 	private float distance;
-
 	public Transform bp1;
 	public Transform bp2;
 	public Transform bp3;
 	public Transform bp4;
-
-
 	public GameObject boss;
 	private Quaternion bossrotation;
 	public bool initialized;
@@ -662,17 +484,13 @@ public class MasterControls : MonoBehaviour {
 	public GameObject floor_start;
 	private Vector3 floor_startonposition;
 	private Vector3 tempposition10;
-
 	private bool prestartover;
 	private bool prestartgaze;
 	private Vector3 startcubeoffposition;
-
 	private float lerpsky;
 	private Color colorsky1;
 	private Color colorsky2 = Color.black;
-	private float skyduration =1.0f;
-
-
+    private float skyduration = 1.0f;
 	public Vector3 c1onposition=new Vector3(-23.843f,-81.357f,-95.244f);
 	public Vector3 c2onposition=new Vector3(-22.909f,-81.357f,-95.244f);
 	public Vector3 c3onposition=new Vector3(-24.995f,-81.357f,-94.67f);
@@ -681,26 +499,22 @@ public class MasterControls : MonoBehaviour {
 	public Vector3 c6onposition=new Vector3(-22.605f,-81.357f,-94.793f);
 	public Image downarrow;
 	public Sprite downarrowsprite;
-
 	public Material material1;
 	public Material material2;
 	public Material material3;
 	public Material material4;
 	public Material material5;
 	public Material material6;
-
 	public GameObject level2wall1;
 	public GameObject level2lwall;
 	public GameObject level2rwall;
 	public GameObject level2fwall;
 	public GameObject level2bwall;
-
 	public GameObject level3wall1;	
 	public GameObject level3wall2;
 	public GameObject level3wall3;
 	public GameObject level3wall4;
 	public GameObject level3wall5;
-
 	public GameObject level3lwall;
 	public GameObject level3rwall;
 	public GameObject level3fwall;
@@ -739,48 +553,33 @@ public class MasterControls : MonoBehaviour {
 	public GameObject level7wall7;
 	public GameObject level7wall8;
 	public GameObject level7wall9;
-
 	public GameObject level7floor1;
 	public GameObject level7floor2;
-
 	public GameObject level8wall1;
 	public GameObject level8wall2;
 	public GameObject level8wall3;
 	public GameObject level8wall4;
-
-
-
 	private Quaternion bossr1;
 	private Quaternion bossr2;
 	private Quaternion bossr3;
 	private Quaternion bossr4;
-
 	private int[] pattern2;
 	private int[] pattern3;
 	private int[] pattern4;
 	private int[] pattern5;
 	private int[] pattern6;
 	private int[] pattern7;
-
-
 	public bool outlinemoveaway;
 	public bool outlinemovein;
-
-
-
-
 	public AudioSource materialswitch;
 	public Camera abovecamera;
 	public CameraSwitcher cameraswitcher;
 	private Material currentmaterial;
-
 	public int explosioncounter;
-
 	private Vector3 tempposition20;
 	public AudioClip room1sound;
 	public AudioClip room2sound;
 	public AudioClip room3sound;
-
 	private float level1targetpitch=.8f;
 	private float level2targetpitch=1f;
 	private float level3targetpitch=1.2f;
@@ -789,7 +588,6 @@ public class MasterControls : MonoBehaviour {
 	private float level6targetpitch=1.8f;
 	private float level7targetpitch=2f;
 	private float level8targetpitch=2.2f;
-
 	private float level1targetv=.4f;
 	private float level2targetv=.6f;
 	private float level3targetv=.8f;
@@ -799,39 +597,29 @@ public class MasterControls : MonoBehaviour {
 	private float level7targetv=1.6f;
 	private float level8targetv=.4f;
 	public Light startpointlight;
-
 	private Vector3 bossoffposition;
 	private Vector3 bossstartposition;
-
 	private Animator bossanimator;
 	private bool proximity;
 	public AudioSource bosssound;
-
 	public Text scoretext;
 	public Text scoretext2;
 	public Text scoretext3;
 	public Text scoretext4;
 	public Text scoretext5;
-
 	private string scorestring;
 	private int scoreint;
 	private int scorecount;
-
 	private Vector3 level5_bordersstartposition;
 	private Vector3 level6_bordersstartposition;
 	private Vector3 level7_bordersstartposition;
-
-
 	private float tttimeelapsed;
 	public Text totaltimetext;
 	public Text totaltimetext2;
 	public Text totaltimetext3;
 	public Text totaltimetext4;
 	public Text totaltimetext5;
-
-
 	public Camera trackcamera;
-
 	public GameObject out_level1;
 	public GameObject out_level2;
 	public GameObject out_level3;
@@ -840,24 +628,14 @@ public class MasterControls : MonoBehaviour {
 	public GameObject out_level6;
 	public GameObject out_level7;
 	public GameObject out_level8;
-
-
 	public Sprite reticle_start;
-
 	public Sprite reticle_start1;
 	public Sprite reticle_start2;
 	public Sprite reticle_start3;
 	public Sprite reticle_start4;
 	private bool gazestartcube;
-
 	private float countdowntimer1;
 	private float lengthoftime=60;
-
-
-
-
-
-
 	public GameObject cockroach1;
 	public GameObject cockroach2;
 	public GameObject cockroach3;
@@ -885,149 +663,85 @@ public class MasterControls : MonoBehaviour {
 	public GameObject cockroach25;
 	public GameObject cockroach26;
 	public GameObject floor_rest;
-
 	public float level7dreamint1=7;
 	public float level7dreamint2=8;
-
-
-
 	public Camera hudcamera_th;
 	public Camera ccamera_th;
-
 	private bool endstarted;
-
 	private Vector3 idleposition;
 	private Quaternion idlerotation;
-
-
 	private float idlethreshhold;
 	public bool setupplayer;
-
 	private float awaymove=.3f;
+    private float dotOnScreenSpeed = 1f;
+    private float dotOffScreenSpeed = .1f;
 
-
-	//DEFINE
-	void Start () {
-
-		//outlinemoveaway = true;
-
+	void Start ()
+    {
 		level6offposition = new Vector3 (-5, -20, -1);
 		countdowntimer1 = lengthoftime;
-		outlineonposition = new Vector3 (.634f, 39.6f, -.505f);
+		outlineOnPosition = new Vector3 (.634f, 39.6f, -.505f);
 		outlineoffposition = new Vector3 (.634f, 39.6f, 7.07f);
 		outlineoff2position = new Vector3 (.634f,39.6f, -6.07f);
-		//outlineoff2position = new Vector3 (.634f, 41, 7.07f);
-
-
-
 		level5_bordersstartposition = new Vector3 (.72f, -1.94f, -.886f);
 		level6_bordersstartposition = new Vector3 (-5.62f,-2,-1.17f);
 		level7_bordersstartposition = new Vector3 (-5.012f,-4,-1.19f);
-
-
 		startcubestartposition = startcube.transform.position;
 		floor_startonposition = floor_start.transform.position;
-		bossanimator = GameObject.Find ("26").GetComponent<Animator> ();
+		bossanimator = GameObject.Find ("Cockroach-Boss").GetComponent<Animator> ();
 		bossoffposition=new Vector3(.46f,-4f,-.68938f);
 		bossstartposition = new Vector3 (.46f, -.171f, -.68938f);
-
 		boss.transform.position = bossoffposition;
 		bossr1 = GameObject.Find ("Boss_rotation1").transform.rotation;
 		bossr2 = GameObject.Find ("Boss_rotation2").transform.rotation;
 		bossr3= GameObject.Find ("Boss_rotation3").transform.rotation;
 		bossr4 = GameObject.Find ("Boss_rotation4").transform.rotation;
-
 		spotlight.shadowNearPlane = 0;
 		currentmaterial = material1;
 		structureonposition = new Vector3 (0, 3.17f, .65f);
 		structureoffposition = new Vector3 (0, -100f, .65f);
 		structure.transform.position = structureoffposition;
-
 		startcubeoffposition = new Vector3 (.63f, -20, 1.73f);
 		bossrotation = GameObject.Find ("Boss_rotation4").transform.rotation;
 		spotlight.transform.parent = GameObject.Find ("FPSController (head)").transform;
-
 		reticleColor1 = new Color (1, 1, 1, .5f);
 		reticlecolor2 = new Color (0, 0, 0, .5f);
 		reticle.color = reticleColor1;
-
 		InvokeRepeating ("BlackWhite", 0, .5f);
 		cielingoffposition = new Vector3 (.7f, 40, -.4f);
-
-
 		floordownposition = new Vector3 (0.7f, -2.466f, -.4f);
-
-		//Colorbrown = new Color(.1f,1f,.1f,1f);
 		Colorbrown = new Color(.66f,.294f,.294f,1f);
-
-
-
 		GameObject.Find ("HUD (ears)").GetComponent<AudioListener> ().enabled = false;
 		GameObject.Find ("AboveCamera (ears)").GetComponent<AudioListener> ().enabled = false;
-
-		//Debug.Log ("tempcolor :" + tempcolor1);
-
 		tempcolor1 = Color.white;
 		tempcolor2 = Color.white;
 		tempcolor3 = Color.white;
 		tempcolor4 = Color.white;
-
-
-
 		dotsound.volume = 0;
-	//	dotsound.pitch = 0;
-
-
-
 		coloryellow = Color.yellow;
-
 		ccamera.GetComponent<CameraFilterPack_Color_RGB> ().enabled = true;
 		ccamera_th.GetComponent<CameraFilterPack_Color_RGB> ().enabled = true;
-
-
 		currentmaterial.SetTextureScale ("_MainTex", new Vector2 (2, 2));
-
 		floormaterial.SetTextureScale ("_MainTex", new Vector2 (2, 2));
 		wallmaterial.SetTextureScale ("_MainTex", new Vector2 (4, 4));
-
-
-
 		red.SetFloat ("_Cutoff", 0);
-		white.SetFloat ("_Cutoff", 0);
-
-		/*p1onposition = new Vector3 (-5.34f, 2.96f, 16.97f);
-		p1offposition = new Vector3 (-25f, 40f, 1f);
-
-		p2onposition = new Vector3 (1.77f, 2.96f, 16.97f);
-		p2offposition = new Vector3 (1.7f,40f, 16.97f);
-
-		p3onposition = new Vector3 (7.45f, 2.96f, 16.97f);
-		p3offposition = new Vector3 (27f, 40f, 16.97f);*/
-
+		white.SetFloat ("_Cutoff", 0);	
 		p1onposition = new Vector3 (-5.47f, 3.31f, 15.54f);
 		p1offposition = new Vector3 (-5.47f, 3.31f,-1.14f);
-
 		p0onposition = new Vector3 (2.2f,-7.4f,12.3f);
 		p0offposition = new Vector3 (2,-500f,-100f);
-
 		p2onposition = new Vector3 (9.68f, 3.31f, 15.54f);
 		p2offposition = new Vector3 (9.68f,3.31f,-.13f);
-
 		p3onposition = new Vector3 (-5.47f, -2.58f, 15.54f);
 		p3offposition = new Vector3 (-5.47f, -2.58f, -.69f);
-
 		p4onposition = new Vector3 (9.68f,-2.58f,15.54f);
 		p4offposition = new Vector3 (9.68f,-2.58f,-.43f);
-
 		p5onposition = new Vector3 (-5.47f,-8.5f,15.54f);
 		p5offposition = new Vector3 (-5.47f,-8.5f,.75f);
-
 		p6onposition = new Vector3 (9.68f,-8.5f,15.54f);
 		p6offposition = new Vector3 (9.68f,-8.5f,.75f);
-
 		p7onposition = new Vector3 (-5.47f,-8.45f,16.97f);
 		p7offposition = new Vector3 (-5.47f,-8.45f,-2f);
-
 		P0.transform.localPosition=p0offposition;
 		P1.transform.localPosition=p1offposition;
 		P2.transform.localPosition=p2offposition;
@@ -1036,71 +750,35 @@ public class MasterControls : MonoBehaviour {
 		P5.transform.localPosition=p5offposition;
 		P6.transform.localPosition=p6offposition;
 		P7.transform.localPosition=p7offposition;
-
 		sphereposition1 = new Vector3 (.82f,1.66f,-.53f);
 		sphereposition2 = new Vector3 (.82f,1.55f,-.53f);
 		sphereposition3 = new Vector3 (.82f,1.51f,-.53f);
-
 		floor2onposition=new Vector3(-.275f,-1.994f,-0.574f);
-
 		floor2offposition=new Vector3(7.4f,-.3f,-.4f);
 		flooroffposition = new Vector3(7.84f,-20.9f,-.4f);
 		flooronposition = new Vector3(.65f,-.29f,-.4f);
-
-
 		sphereytarget = 1.9f;
-		storageposition = new Vector3 (20, 20, 20);
-
-		//level2wall1.transform.position=storageposition;
-		//level2wall2.transform.position=storageposition;
-
+		storageposition = new Vector3 (20, 20, 20);	
 		levelcounter = 0;
-		cockroachskybox.SetFloat("_AtmosphereThickness",exposure);
-
-		//fourwallsstartposition = fourwalls.transform.position;
-		//fourwallsstartposition.y = 1.84f;
-		//fourwalls.transform.position = new Vector3 (fourwallsstartposition.x, fourwallsstartposition.y, fourwallsstartposition.z);
-
-		//fourwallstargetposition = fourwallsstartposition;
-		//fourwallstargetposition.y = 2.8f;
-
-		//sphereposition = sphere.transform.position;
-		spherey = sphereposition.y;
-		//spotangle = spotlight.spotAngle;
-		//InvokeRepeating ("Fadingarrows", 0, 2);
-
+		cockroachskybox.SetFloat("_AtmosphereThickness",exposure);	
+		spherey = sphereposition.y;	
 		level1startposition = new Vector3 (0.596f, -2f, -1.17f);
 		level1targetposition = new Vector3 (0.596f, -1.226f, -1.17f);
 		level6_floortargetposition = new Vector3 (.57f, -1.145f, -1.17f);
 		level6targetposition = new Vector3 (-5, -1.153f, -1.17f);
 		level7targetposition = new Vector3 (-5.013f, -1.488f, -1.124f);
-
 		level1offposition = new Vector3 (0.596f, -10f, -1.17f);
 		level2offposition = new Vector3 (0.596f, -12f, -1.17f);
 		level3offposition = new Vector3 (0.596f, -14, -1.17f);
 		level4offposition = new Vector3 (0.596f, -16, -1.17f);
 		level5offposition = new Vector3 (0.596f, -18, -1.17f);
-
 		level7_floortargetposition = new Vector3(.654f,-2.08f, -1.182f);
 		level7_borderstargetposition = new Vector3(-5.012f,-1.486822f,-1.19f);
 		level7_bordersstartposition = new Vector3(-5.012f,-3f,-1.19f);
-
 		level6_flooroffposition = new Vector3 (0.596f, -10f, -1.17f);
 		level7_flooroffposition = new Vector3 (0.596f, -12f, -1.17f);
-
-
 		level1.transform.localPosition = level1startposition;
-		level2.transform.localPosition = level1startposition;
-		/*level3.transform.localPosition = level1startposition;
-		level4_borders.transform.localPosition = level1startposition;
-		level4_floor.transform.localPosition = level1startposition;
-		level5_borders.transform.localPosition = level1startposition;
-		level5_floor.transform.localPosition = level1startposition;
-		level6_borders.transform.localPosition = level1startposition;
-		level6_floor.transform.localPosition = level1startposition;*/
-
-
-		//InvokeRepeating ("QuadrantCheck", 0, 2);
+		level2.transform.localPosition = level1startposition;	
 		red.SetFloat("_Cutoff",0);
 		blue.SetFloat("_Cutoff",0);
 		green.SetFloat("_Cutoff",0);
@@ -1109,7 +787,6 @@ public class MasterControls : MonoBehaviour {
 		cyan.SetFloat("_Cutoff",0);
 		magenta.SetFloat ("_Cutoff", 0);
 		brown.SetFloat ("_Cutoff", 0);
-
 		cielingposition1 =  new Vector3 (.53f, .7f, -.4f);
 		cielingposition2 = new Vector3 (.7f, .67f, -.4f);
 		cielingposition3 = new Vector3 (.7f, .64f, -.4f);
@@ -1118,15 +795,7 @@ public class MasterControls : MonoBehaviour {
 		cielingposition5 = new Vector3 (.7f, .52f, -.4f);
 		cielingposition6 = new Vector3 (.7f, .5f, -.4f);
 		cielingposition7 = new Vector3 (.7f, .45f, -.4f);
-		cielingposition8 = new Vector3 (.7f, .4f, -.4f);
-
-
-
-
-
-
-
-
+		cielingposition8 = new Vector3 (.7f, .4f, -.4f);       
 		gridonposition = new Vector3 (0, .7f, 0);
 		gridoffposition = new Vector3 (0, -10, 0);
 		headunderwater = "PLEASE PUT HEAD UNDER GRID";
@@ -1136,67 +805,46 @@ public class MasterControls : MonoBehaviour {
 		pattern5 = new int[4];pattern5 [0] = 4;pattern5 [1] = 3;pattern5 [2] = 2;pattern5 [3] = 1;
 		pattern6 = new int[5];pattern6 [0] = 2;pattern6 [1] = 5;pattern6 [2] = 4;pattern6 [3] = 3;pattern6 [4] = 1;
 		pattern7 = new int[6];pattern7 [0] = 6;pattern7 [1] = 3;pattern7 [2] = 2;pattern7 [3] = 5;pattern7 [4] = 1;pattern7 [5] = 4;
-
-
-
-
-
-		
-	
 	}
 
 	// Update is called once per frame
-	void Update () {
-
-		if (Input.GetKey("r")) {
-		
+	void Update ()
+    {
+        // RESET GAME
+		if (Input.GetKey("r"))
+        {
 			Application.LoadLevel(Application.loadedLevel);
-
-
 		}
 
-		if (Input.GetKey("escape")) {
-
+        // QUIT GAME
+		if (Input.GetKey("escape"))
+        {
 			Application.Quit ();
-
-
 		}
-	//	Debug.Log ("countdowntimer : " + countdowntimer1);
-		//Debug.Log ("dotsoundvolume :" + dotsound.volume + " dotsoundclip:" + dotsound.clip + "countdowntimer : " + countdowntimer1 + " pattern: " + pattern + " headtouch : " + cameraposition.headtouch);
-		if (outlinemoveaway) {
-		
+
+		if (outlinemoveaway)
+        {
 			out_level1.transform.position = Vector3.Lerp (out_level1.transform.position, outlineoffposition, 2 * Time.deltaTime);
 			out_level2.transform.position = Vector3.Lerp (out_level2.transform.position, outlineoffposition, 3 * Time.deltaTime);
 			out_level3.transform.position = Vector3.Lerp (out_level3.transform.position, outlineoffposition, 1.5f * Time.deltaTime);
 			out_level4.transform.position = Vector3.Lerp (out_level4.transform.position, outlineoffposition, 4 * Time.deltaTime);
 			out_level5.transform.position = Vector3.Lerp (out_level5.transform.position, outlineoffposition, 2.5f * Time.deltaTime);
 			out_level7.transform.position = Vector3.Lerp (out_level7.transform.position, outlineoffposition, 2 * Time.deltaTime);
-
-
-
-
-
 		}
 
-		if (outlinemovein) {
-
-			out_level1.transform.position = Vector3.Lerp (out_level1.transform.position, outlineonposition, 2 * Time.deltaTime);
-			out_level2.transform.position = Vector3.Lerp (out_level2.transform.position, outlineonposition, 3 * Time.deltaTime);
-			out_level3.transform.position = Vector3.Lerp (out_level3.transform.position, outlineonposition, 1.5f * Time.deltaTime);
-			out_level4.transform.position = Vector3.Lerp (out_level4.transform.position, outlineonposition, 4 * Time.deltaTime);
-			out_level5.transform.position = Vector3.Lerp (out_level5.transform.position, outlineonposition, 2.5f * Time.deltaTime);
-			out_level7.transform.position = Vector3.Lerp (out_level7.transform.position, outlineonposition, 2 * Time.deltaTime);
-
-
-
-
-
+		if (outlinemovein)
+        {
+			out_level1.transform.position = Vector3.Lerp (out_level1.transform.position, outlineOnPosition, 2 * Time.deltaTime);
+			out_level2.transform.position = Vector3.Lerp (out_level2.transform.position, outlineOnPosition, 3 * Time.deltaTime);
+			out_level3.transform.position = Vector3.Lerp (out_level3.transform.position, outlineOnPosition, 1.5f * Time.deltaTime);
+			out_level4.transform.position = Vector3.Lerp (out_level4.transform.position, outlineOnPosition, 4 * Time.deltaTime);
+			out_level5.transform.position = Vector3.Lerp (out_level5.transform.position, outlineOnPosition, 2.5f * Time.deltaTime);
+			out_level7.transform.position = Vector3.Lerp (out_level7.transform.position, outlineOnPosition, 2 * Time.deltaTime);
 		}
 
-
-		if (initialized) {
-			
-			if (!endstarted)tttimeelapsed += Time.deltaTime;
+		if (initialized)
+        {
+			if (!endstarted) tttimeelapsed += Time.deltaTime;
 			scoretext.text = scoreint.ToString ();
 			scoretext2.text = scoreint.ToString ();
 			scoretext3.text = scoreint.ToString ();
@@ -1568,7 +1216,7 @@ public class MasterControls : MonoBehaviour {
 			CancelInvoke ("Fadingarrows");
 
 			spotlight.intensity = Mathf.Lerp (spotlight.intensity,spotlight_targetintensity1, 3 * Time.deltaTime);
-			out_level1.transform.position = Vector3.Lerp (out_level1.transform.position, outlineonposition, 5 * Time.deltaTime);
+			out_level1.transform.position = Vector3.Lerp (out_level1.transform.position, outlineOnPosition, 5 * Time.deltaTime);
 
 			level1.transform.localPosition = Vector3.Lerp (level1.transform.localPosition, level1targetposition, 3f * Time.deltaTime);
 			cieling.transform.position = Vector3.Lerp (cieling.transform.position, cielingposition1, 7f * Time.deltaTime);
@@ -2720,7 +2368,7 @@ public class MasterControls : MonoBehaviour {
 			level2.transform.localPosition = Vector3.Lerp (level2.transform.localPosition, level1targetposition, 2f * Time.deltaTime);
 			roomsound.pitch = Mathf.Lerp (roomsound.pitch,level2targetpitch,2*Time.deltaTime);
 			roomsound.volume = Mathf.Lerp (roomsound.volume, level2targetv, 2 *Time.deltaTime);
-			out_level2.transform.position = Vector3.Lerp (out_level2.transform.position, outlineonposition, 5 * Time.deltaTime);
+			out_level2.transform.position = Vector3.Lerp (out_level2.transform.position, outlineOnPosition, 5 * Time.deltaTime);
 
 
 
@@ -2731,7 +2379,7 @@ public class MasterControls : MonoBehaviour {
 			level3.transform.localPosition = Vector3.Lerp (level3.transform.localPosition, level1targetposition, 2 * Time.deltaTime);
 			roomsound.pitch = Mathf.Lerp (roomsound.pitch,level3targetpitch,2*Time.deltaTime);
 			roomsound.volume = Mathf.Lerp (roomsound.volume, level3targetv, 2 *Time.deltaTime);
-			out_level3.transform.position = Vector3.Lerp (out_level3.transform.position, outlineonposition, 2 * Time.deltaTime);
+			out_level3.transform.position = Vector3.Lerp (out_level3.transform.position, outlineOnPosition, 2 * Time.deltaTime);
 
 
 
@@ -2744,7 +2392,7 @@ public class MasterControls : MonoBehaviour {
 			floor.transform.position = level1offposition;
 			roomsound.pitch = Mathf.Lerp (roomsound.pitch,level4targetpitch,2*Time.deltaTime);
 			roomsound.volume = Mathf.Lerp (roomsound.volume, level4targetv, 2 *Time.deltaTime);
-			out_level4.transform.position = Vector3.Lerp (out_level4.transform.position, outlineonposition, 2 * Time.deltaTime);
+			out_level4.transform.position = Vector3.Lerp (out_level4.transform.position, outlineOnPosition, 2 * Time.deltaTime);
 
 
 		}
@@ -2756,7 +2404,7 @@ public class MasterControls : MonoBehaviour {
 		floor.transform.position = Vector3.Lerp (floor.transform.position, level1offposition, 3f * Time.deltaTime);
 		roomsound.pitch = Mathf.Lerp (roomsound.pitch,level5targetpitch,2*Time.deltaTime);
 		roomsound.volume = Mathf.Lerp (roomsound.volume, level5targetv, 2 *Time.deltaTime);
-			out_level5.transform.position = Vector3.Lerp (out_level5.transform.position, outlineonposition, 2 * Time.deltaTime);
+			out_level5.transform.position = Vector3.Lerp (out_level5.transform.position, outlineOnPosition, 2 * Time.deltaTime);
 
 
 		}
@@ -2769,7 +2417,7 @@ public class MasterControls : MonoBehaviour {
 			floor.transform.position = Vector3.Lerp (floor.transform.position, level1offposition, 3f * Time.deltaTime);
 			roomsound.pitch = Mathf.Lerp (roomsound.pitch,level6targetpitch,2*Time.deltaTime);
 			roomsound.volume = Mathf.Lerp (roomsound.volume, level6targetv, 2 *Time.deltaTime);
-			out_level1.transform.position = Vector3.Lerp (out_level1.transform.position, outlineonposition, 2 * Time.deltaTime);
+			out_level1.transform.position = Vector3.Lerp (out_level1.transform.position, outlineOnPosition, 2 * Time.deltaTime);
 
 
 		}
@@ -2782,7 +2430,7 @@ public class MasterControls : MonoBehaviour {
 			level7_borders.transform.localPosition = Vector3.Lerp (level7_borders.transform.localPosition, level7_borderstargetposition, 2 * Time.deltaTime);
 			roomsound.pitch = Mathf.Lerp (roomsound.pitch,level7targetpitch,2*Time.deltaTime);
 			roomsound.volume = Mathf.Lerp (roomsound.volume, level7targetv, 2 *Time.deltaTime);
-			out_level7.transform.position = Vector3.Lerp (out_level7.transform.position, outlineonposition, 2 * Time.deltaTime);
+			out_level7.transform.position = Vector3.Lerp (out_level7.transform.position, outlineOnPosition, 2 * Time.deltaTime);
 
 
 		}
@@ -2798,7 +2446,7 @@ public class MasterControls : MonoBehaviour {
 			level6_floor.transform.position = level6_flooroffposition;
 			roomsound.pitch = Mathf.Lerp (roomsound.pitch,level8targetpitch,2*Time.deltaTime);
 			roomsound.volume = Mathf.Lerp (roomsound.volume, level8targetv, 2 *Time.deltaTime);
-			out_level1.transform.position = Vector3.Lerp (out_level1.transform.position, outlineonposition, 2 * Time.deltaTime);
+			out_level1.transform.position = Vector3.Lerp (out_level1.transform.position, outlineOnPosition, 2 * Time.deltaTime);
 
 
 
@@ -6914,317 +6562,199 @@ void LevelChangeStop()
 
 
 
-void Patternchange(int pattern)
-{
+    void Patternchange(int pattern)
+    {
 
 		holdoff = true;
-				countdowntimer1 = lengthoftime;		
-		switch (pattern) {
-		case 2:
-			if (pattern2on)return;
-			pattern2on = true;
-			patterntrigger = true;
-		patterntimer=patterntimerthreshold_2;
+		countdowntimer1 = lengthoftime;		
 
-		//	ccamera.GetComponent<BlurOptimized>().enabled =true;
-
-			//spotlight.enabled = false;
-			Invoke ("Pattern2_0", 1f);
-			Invoke ("Pattern2_1", 3f);
-			Invoke ("Pattern2_2", 4f);
-			Invoke ("Pattern2_3", 5f);
-			Invoke ("Pattern2_off", 7f);
-
-			
+		switch (pattern)
+        {
+		    case 2:
+                if (pattern2on)return;
+			    pattern2on = true;
+			    patterntrigger = true;
+		        patterntimer=patterntimerthreshold_2;
+			    Invoke ("Pattern2_0", 1f);
+			    Invoke ("Pattern2_1", 3f);
+			    Invoke ("Pattern2_2", 4f);
+			    Invoke ("Pattern2_3", 5f);
+			    Invoke ("Pattern2_off", 7f);
 			break;
-		case 3:
-			pattern3on = true;
-			patterntrigger = true;
-			patterntimer = patterntimerthreshold_3;
 
-			CancelInvoke ("MaterialChanger");
-			materialcounter = 0;
-
-
-	//	ccamera.GetComponent<BlurOptimized>().enabled =true;
-
-			//spotlight.enabled = false;
-
-			red.SetFloat ("_Cutoff", 0);
-			yellow.SetFloat ("_Cutoff", 0);
-			cyan.SetFloat ("_Cutoff", 0);
-
-			reset_1 = false;
-			reset_2 = false;
-			reset_3 = false;
-
-			patterndeaths = 0;
-
-			Invoke	("Pattern3_00", 0);
-			Invoke	("Pattern3_0", 1);
-			Invoke ("Pattern3_1", 3f);
-			Invoke ("Pattern3_2", 4f);
-			Invoke ("Pattern3_3", 5f);
-			Invoke ("Pattern3_4", 6f);
-			Invoke ("Pattern3_off", 8f);
-
+		    case 3:
+			    pattern3on = true;
+			    patterntrigger = true;
+			    patterntimer = patterntimerthreshold_3;
+			    CancelInvoke ("MaterialChanger");
+			    materialcounter = 0;
+			    red.SetFloat ("_Cutoff", 0);
+			    yellow.SetFloat ("_Cutoff", 0);
+			    cyan.SetFloat ("_Cutoff", 0);
+			    reset_1 = false;
+			    reset_2 = false;
+			    reset_3 = false;
+			    patterndeaths = 0;
+			    Invoke	("Pattern3_00", 0);
+			    Invoke	("Pattern3_0", 1);
+			    Invoke ("Pattern3_1", 3f);
+			    Invoke ("Pattern3_2", 4f);
+			    Invoke ("Pattern3_3", 5f);
+			    Invoke ("Pattern3_4", 6f);
+			    Invoke ("Pattern3_off", 8f);
 			break;
 	
-		case 4:
-		//ccamera.GetComponent<BlurOptimized>().enabled =true;
-
-			pattern4on = true;
-			patterntrigger = true;
-			patterntimer=patterntimerthreshold_4;
-		CancelInvoke ("MaterialChanger");
-		materialcounter = 0;
-
-
-		green.SetFloat ("_Cutoff", 0);
-		brown.SetFloat ("_Cutoff", 0);
-		magenta.SetFloat ("_Cutoff", 0);
-		blue.SetFloat ("_Cutoff", 0);
-
-
-
-		//spotlight.enabled = false;
-			reset_1 = false;
-			reset_2 = false;
-			reset_3 = false;
-			reset_4 = false;
-			patterndeaths = 0;
-
-		Invoke	("Pattern4_0", 1);
-
-		Invoke ("Pattern4_1", 3f);
-		Invoke ("Pattern4_2", 4f);
-		Invoke ("Pattern4_3", 5f);
-		Invoke ("Pattern4_4", 6f);
-		Invoke ("Pattern4_5", 7f);
-
-		Invoke ("Pattern4_off", 9f);
-
-
-
-		break;
-
-
-	case 5:
-		//ccamera.GetComponent<BlurOptimized>().enabled =true;
-
-		pattern5on = true;
-		patterntrigger = true;
-		patterntimer=patterntimerthreshold_5;
-		CancelInvoke ("MaterialChanger");
-
-
-		green.SetFloat ("_Cutoff", 0);
-		brown.SetFloat ("_Cutoff", 0);
-		magenta.SetFloat ("_Cutoff", 0);
-		blue.SetFloat ("_Cutoff", 0);
-
-
-
-		//spotlight.enabled = false;
-		reset_1 = false;
-		reset_2 = false;
-		reset_3 = false;
-		reset_4 = false;
-		patterndeaths = 0;
-
-		Invoke	("Pattern5_0", 1);
-
-		Invoke ("Pattern5_1", 3f);
-		Invoke ("Pattern5_2", 4f);
-		Invoke ("Pattern5_3", 5f);
-		Invoke ("Pattern5_4", 6f);
-		Invoke ("Pattern5_5", 7f);
-
-		Invoke ("Pattern5_off", 9f);
-
-
-
-		break;
-
-
-		case 6:
-
-			Debug.Log ("AT PATTERNCHANGE6 _ START");
-		//ccamera.GetComponent<BlurOptimized>().enabled =true;
-
-		pattern6on = true;
-		patterntrigger = true;
-		patterntimer=patterntimerthreshold_6;
-		CancelInvoke ("MaterialChanger");
-
-
-		green.SetFloat ("_Cutoff", 0);
-		brown.SetFloat ("_Cutoff", 0);
-		magenta.SetFloat ("_Cutoff", 0);
-		blue.SetFloat ("_Cutoff", 0);
-
-
-
-		//spotlight.enabled = false;
-		reset_1 = false;
-		reset_2 = false;
-		reset_3 = false;
-		reset_4 = false;
-		patterndeaths = 0;
-
-		Invoke	("Pattern6_0", 1);
-
-		Invoke ("Pattern6_1", 3f);
-		Invoke ("Pattern6_2", 4f);
-		Invoke ("Pattern6_3", 5f);
-		Invoke ("Pattern6_4", 6f);
-		Invoke ("Pattern6_5", 7f);
-		Invoke ("Pattern6_6", 8f);
-
-
-		Invoke ("Pattern6_off", 10f);
-
-
-		Debug.Log ("AT PATTERNCHANGE6 _ FINSH");
-
-		break;
-
-
-	case 7:
-
-		//ccamera.GetComponent<BlurOptimized>().enabled =true;
-
-		pattern7on = true;
-		patterntrigger = true;
-		patterntimer=patterntimerthreshold_7;
-		CancelInvoke ("MaterialChanger");
-
-
-		green.SetFloat ("_Cutoff", 0);
-		brown.SetFloat ("_Cutoff", 0);
-		magenta.SetFloat ("_Cutoff", 0);
-		blue.SetFloat ("_Cutoff", 0);
-		red.SetFloat ("_Cutoff", 0);
-		yellow.SetFloat ("_Cutoff", 0);
-
-
-
-
-		//spotlight.enabled = false;
-		reset_1 = false;
-		reset_2 = false;
-		reset_3 = false;
-		reset_4 = false;
-		reset_5 = false;
-		reset_6 = false;
-
-
-		patterndeaths = 0;
-
-		Invoke	("Pattern7_0", 1);
-		Invoke ("Pattern7_1", 3f);
-		Invoke ("Pattern7_2", 4f);
-		Invoke ("Pattern7_3", 5f);
-		Invoke ("Pattern7_4", 6f);
-		Invoke ("Pattern7_5", 7);
-		Invoke ("Pattern7_6", 8f);
-		Invoke ("Pattern7_7", 9f);
-
-		Invoke ("Pattern7_off", 12f);
-
-
-
-		break;
-
-
-	case 8:
-
-		//ccamera.GetComponent<BlurOptimized>().enabled =true;
-		if (pattern8on)return;
-		pattern8on = true;
-		patterntrigger = true;
-		patterntimer=patterntimerthreshold_8;
-		CancelInvoke ("MaterialChanger");
-
-
-		green.SetFloat ("_Cutoff", 0);
-		brown.SetFloat ("_Cutoff", 0);
-		magenta.SetFloat ("_Cutoff", 0);
-		blue.SetFloat ("_Cutoff", 0);
-		red.SetFloat ("_Cutoff", 0);
-		yellow.SetFloat ("_Cutoff", 0);
-		cyan.SetFloat ("_Cutoff", 0);
-
-
-
-
-
-		//spotlight.enabled = false;
-		reset_1 = false;
-		reset_2 = false;
-		reset_3 = false;
-		reset_4 = false;
-		reset_5 = false;
-		reset_6 = false;
-		reset_7 = false;
-
-
-		patterndeaths = 0;
-
-		Invoke	("Pattern8_0", 1);
-
-		Invoke ("Pattern8_1", 3f);
-		Invoke ("Pattern8_2", 5f);
-
-		Invoke ("Pattern8_off", 8f);
-
-
-
-		break;
-
-		case 9:
-		//END
-			if (endstarted)
-				return;
-			endstarted = true;
-			outlinemovein = true;
-
-		Together();
-			Invoke ("Death", 8);
-			Invoke ("BoxCollider", 12);
-
-			Invoke ("Restart", 15);
-			wallsound.Play ();
-			spotlight.range = 4;
-			//spotlight.intensity = 1f;
-			ccamera.GetComponent<CameraFilterPack_Color_RGB> ().ColorRGB = Color.white;
-		ccamera_th.GetComponent<CameraFilterPack_Color_RGB> ().ColorRGB = Color.white;
-
-
-			
-
+		    case 4:
+			    pattern4on = true;
+			    patterntrigger = true;
+			    patterntimer=patterntimerthreshold_4;
+		        CancelInvoke ("MaterialChanger");
+		        materialcounter = 0;
+		        green.SetFloat ("_Cutoff", 0);
+		        brown.SetFloat ("_Cutoff", 0);
+		        magenta.SetFloat ("_Cutoff", 0);
+		        blue.SetFloat ("_Cutoff", 0);
+			    reset_1 = false;
+			    reset_2 = false;
+			    reset_3 = false;
+			    reset_4 = false;
+			    patterndeaths = 0;
+		        Invoke	("Pattern4_0", 1);
+		        Invoke ("Pattern4_1", 3f);
+		        Invoke ("Pattern4_2", 4f);
+		        Invoke ("Pattern4_3", 5f);
+		        Invoke ("Pattern4_4", 6f);
+		        Invoke ("Pattern4_5", 7f);
+		        Invoke ("Pattern4_off", 9f);
+		    break;
+    
+	        case 5:
+		        pattern5on = true;
+		        patterntrigger = true;
+		        patterntimer=patterntimerthreshold_5;
+		        CancelInvoke ("MaterialChanger");
+		        green.SetFloat ("_Cutoff", 0);
+		        brown.SetFloat ("_Cutoff", 0);
+		        magenta.SetFloat ("_Cutoff", 0);
+		        blue.SetFloat ("_Cutoff", 0);
+		        reset_1 = false;
+		        reset_2 = false;
+		        reset_3 = false;
+		        reset_4 = false;
+		        patterndeaths = 0;
+		        Invoke	("Pattern5_0", 1);
+		        Invoke ("Pattern5_1", 3f);
+		        Invoke ("Pattern5_2", 4f);
+		        Invoke ("Pattern5_3", 5f);
+		        Invoke ("Pattern5_4", 6f);
+		        Invoke ("Pattern5_5", 7f);
+		        Invoke ("Pattern5_off", 9f);
+	    	break;
+
+		    case 6:
+			    Debug.Log ("AT PATTERNCHANGE6 _ START");
+		        pattern6on = true;
+		        patterntrigger = true;
+		        patterntimer=patterntimerthreshold_6;
+		        CancelInvoke ("MaterialChanger");
+		        green.SetFloat ("_Cutoff", 0);
+		        brown.SetFloat ("_Cutoff", 0);
+		        magenta.SetFloat ("_Cutoff", 0);
+		        blue.SetFloat ("_Cutoff", 0);
+		        reset_1 = false;
+		        reset_2 = false;
+		        reset_3 = false;
+		        reset_4 = false;
+		        patterndeaths = 0;
+		        Invoke	("Pattern6_0", 1);
+		        Invoke ("Pattern6_1", 3f);
+		        Invoke ("Pattern6_2", 4f);
+		        Invoke ("Pattern6_3", 5f);
+		        Invoke ("Pattern6_4", 6f);
+		        Invoke ("Pattern6_5", 7f);
+		        Invoke ("Pattern6_6", 8f);
+		        Invoke ("Pattern6_off", 10f);
+		        Debug.Log ("AT PATTERNCHANGE6 _ FINSH");
+		    break;
+            
+	        case 7:
+		        pattern7on = true;
+		        patterntrigger = true;
+		        patterntimer=patterntimerthreshold_7;
+		        CancelInvoke ("MaterialChanger");
+		        green.SetFloat ("_Cutoff", 0);
+		        brown.SetFloat ("_Cutoff", 0);
+		        magenta.SetFloat ("_Cutoff", 0);
+		        blue.SetFloat ("_Cutoff", 0);
+		        red.SetFloat ("_Cutoff", 0);
+		        yellow.SetFloat ("_Cutoff", 0);
+		        reset_1 = false;
+		        reset_2 = false;
+		        reset_3 = false;
+		        reset_4 = false;
+		        reset_5 = false;
+		        reset_6 = false;
+		        patterndeaths = 0;
+		        Invoke	("Pattern7_0", 1);
+		        Invoke ("Pattern7_1", 3f);
+		        Invoke ("Pattern7_2", 4f);
+		        Invoke ("Pattern7_3", 5f);
+		        Invoke ("Pattern7_4", 6f);
+		        Invoke ("Pattern7_5", 7);
+		        Invoke ("Pattern7_6", 8f);
+		        Invoke ("Pattern7_7", 9f);
+		        Invoke ("Pattern7_off", 12f);
+		    break;
+
+	        case 8:
+		        //ccamera.GetComponent<BlurOptimized>().enabled =true;
+		        if (pattern8on)return;
+		        pattern8on = true;
+		        patterntrigger = true;
+		        patterntimer=patterntimerthreshold_8;
+		        CancelInvoke ("MaterialChanger");           
+		        green.SetFloat ("_Cutoff", 0);
+		        brown.SetFloat ("_Cutoff", 0);
+		        magenta.SetFloat ("_Cutoff", 0);
+		        blue.SetFloat ("_Cutoff", 0);
+		        red.SetFloat ("_Cutoff", 0);
+		        yellow.SetFloat ("_Cutoff", 0);
+		        cyan.SetFloat ("_Cutoff", 0);
+		        //spotlight.enabled = false;
+		        reset_1 = false;
+		        reset_2 = false;
+		        reset_3 = false;
+		        reset_4 = false;
+		        reset_5 = false;
+		        reset_6 = false;
+		        reset_7 = false;
+		        patterndeaths = 0;
+		        Invoke	("Pattern8_0", 1);
+		        Invoke ("Pattern8_1", 3f);
+		        Invoke ("Pattern8_2", 5f);
+		        Invoke ("Pattern8_off", 8f);
+	       	break;
+
+            //END
+            case 9:
+			    if (endstarted) return;
+			    endstarted = true;
+			    outlinemovein = true;      
+		        Together();
+			    Invoke ("Death", 8);
+			    Invoke ("BoxCollider", 12);
+			    Invoke ("Restart", 15);
+			    wallsound.Play ();
+			    spotlight.range = 4;
+			    ccamera.GetComponent<CameraFilterPack_Color_RGB> ().ColorRGB = Color.white;
+		        ccamera_th.GetComponent<CameraFilterPack_Color_RGB> ().ColorRGB = Color.white;
 			break;
-
-	}
-
-		
+	    }
+    }
 
 
-
-
-
-		
-
-
-
-
-
-
-}
-
-
-void ResetPatternTurningOff()
-{
+    void ResetPatternTurningOff()
+    {
 	pattern = false;
 
 		switch (levelcounter) {
@@ -8739,11 +8269,11 @@ void SetInitialize()
 		InvokeRepeating ("Cracking", 2, .01f);
 		InvokeRepeating ("CrackingDirection", 2, 5);
 		ccamera.GetComponent<VignetteAndChromaticAberration> ().enabled = true;
-		ccamera.GetComponent<CameraFilterPack_TV_BrokenGlass> ().enabled = true;
+		//ccamera.GetComponent<CameraFilterPack_TV_BrokenGlass> ().enabled = true;
 		ccamera.GetComponent<CameraFilterPack_Distortion_Dream2> ().enabled = true;
 
 	ccamera_th.GetComponent<VignetteAndChromaticAberration> ().enabled = true;
-	ccamera_th.GetComponent<CameraFilterPack_TV_BrokenGlass> ().enabled = true;
+	//ccamera_th.GetComponent<CameraFilterPack_TV_BrokenGlass> ().enabled = true;
 	ccamera_th.GetComponent<CameraFilterPack_Distortion_Dream2> ().enabled = true;
 
 		
